@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python to Flowchart Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.3.0/raphael.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.17.1/flowchart.min.js"></script>
+</head>
+<body>
+    <h1>Python to Flowchart Converter</h1>
+
+    <textarea id="codeInput" placeholder="Enter Python code here..."></textarea>
+    <button onclick="generateFlowchart()">Generate Flowchart</button>
+
+    <h3>OR Upload a Python File</h3>
+    <input type="file" id="fileInput" accept=".py">
+    <button onclick="uploadPythonFile()">Upload & Generate</button>
+
+    <div id="canvas"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
